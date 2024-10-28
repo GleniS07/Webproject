@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, yellow, orange);
+    color: #333;
+}
+
+header {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.taj-image {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.blog-content {
+    padding: 0 20px;
+    text-align: center;
+}
+
+footer {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.social-icons {
+    margin: 10px 0;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    vertical-align: middle;
+}

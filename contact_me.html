@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Taj Mahal Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #4e44a7;
+            color: white;
+            position: relative; /* Position relative for absolute positioning of the logo */
+        }
+        header img {
+            position: absolute; /* Position logo absolutely */
+            left: 20px; /* Distance from the left */
+            width: 100px; /* Adjust size as needed */
+            height: auto;
+        }
+        h1 {
+            margin: 0; /* Remove default margin */
+        }
+        nav {
+            margin-top: 10px; /* Space between title and nav */
+        }
+        nav a {
+            margin: 0 25px;  /* Increased margin for spacing */
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+        }
+        .container {
+            display: flex; /* Flexbox for centering */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            flex-direction: column; /* Column layout */
+            height: 80vh; /* Adjust height as needed */
+        }
+        .inputBox {
+            margin: 10px 0; /* Space between input boxes */
+            width: 300px; /* Fixed width for input boxes */
+        }
+        .inputBox input,
+        .inputBox textarea {
+            width: 100%; /* Full width inputs */
+            padding: 10px; /* Padding for inputs */
+            border: 1px solid #ccc; /* Border for inputs */
+            border-radius: 5px; /* Rounded corners */
+        }
+        .inputBox button {
+            background-color: #4e44a7; /* Button color */
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%; /* Full width button */
+        }
+        .inputBox button:hover {
+            background-color: #3a3480; /* Darker on hover */
+        }
+        .alert {
+            color: green; /* Alert color */
+            display: none; /* Hidden by default */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="website_logo.png" alt="Website Logo"> <!-- Replace with your logo path -->
+        <h1>DESI-DE-TOURS</h1>
+        <nav>
+            <a href="Home_Page.html">Home</a>
+            <a href="About_Me.html">About Me</a>
+            <a href="faq.html">FAQ</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <form action="" id="ContactForm">
+            <div class="alert" id="successMessage">Your message has been sent!</div>
+            
+            <div class="inputBox">
+                <input type="text" id="name" placeholder="Your Name..." required>
+            </div>
+
+            <div class="inputBox">
+                <input type="email" id="emailid" placeholder="Your Email ID..." required>
+            </div>
+
+            <div class="inputBox">
+                <textarea id="MsgContent" cols="30" rows="10" placeholder="Your Message..." required></textarea>
+            </div>
+
+            <div class="inputBox">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    
+    <script src="./mail.js"></script> <!-- Corrected the script tag -->
+</body>
+</html>
+
+
+
+
